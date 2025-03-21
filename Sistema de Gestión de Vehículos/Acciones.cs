@@ -105,5 +105,23 @@ namespace Sistema_de_Gestión_de_Vehículos
 
             Console.WriteLine("El camión se actualizó con éxito");
         }
+        public void EliminarCoche()
+        {
+            Console.WriteLine("Dame el ID a eliminar");
+            int id = Convert.ToInt32(Console.ReadLine());
+            var coche = diccionario.FirstOrDefault(x => x.Value.ID == id);
+
+                diccionario.Remove(id);
+
+        }
+        public void EliminarCamion()
+        {
+            Console.WriteLine("Dame el ID a eliminar");
+            int id = Convert.ToInt32(Console.ReadLine());
+            var camion = diccionario.FirstOrDefault(x => x.Value.ID == id);
+
+            diccionario.Remove(id);
+
+        }
     }
 }
