@@ -9,8 +9,8 @@ namespace Sistema_de_Gestión_de_Vehículos
     internal class VehiculoCamion : BaseVehiculo
     {
         public VehiculoCamion() { }
-        public VehiculoCamion(int id, string marca, string modelo, int año, double capacidadCarga)
-            : base(id, marca, modelo, año)
+        public VehiculoCamion(int iD, string marca, string modelo, int año, double capacidadCarga)
+            : base(iD, marca, modelo, año)
         {
             CapacidadCarga = capacidadCarga;
         }

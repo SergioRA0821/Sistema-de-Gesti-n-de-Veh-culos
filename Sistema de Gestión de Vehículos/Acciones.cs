@@ -23,7 +23,7 @@ namespace Sistema_de_Gestión_de_Vehículos
             coche.Modelo = Console.ReadLine();
             Console.WriteLine("Ingresa el año:");
             coche.Año = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Ingresa su capacidad de carga en toneladas:");
+            Console.WriteLine("Ingresa su número de puertas:");
             coche.NumPuertas = Convert.ToInt32(Console.ReadLine());
             diccionario.Add(id, new VehiculoCoche(coche.ID, coche.Marca, coche.Modelo, coche.Año, coche.NumPuertas));
         }
